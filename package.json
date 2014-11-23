@@ -1,0 +1,33 @@
+{
+  "name": "boke",
+  "version": "0.0.1",
+  "description": "blog by GitHub Issues",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "watchify -v -t vueify -e src/main.js -o build/build.js",
+    "build": "./node_modules/watchify/node_modules/.bin/browserify -t vueify src/main.js  > build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/demohi/boke.git"
+  },
+  "keywords": [
+    "Issues"
+  ],
+  "author": "mdemo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/demohi/boke/issues"
+  },
+  "homepage": "https://github.com/demohi/boke",
+  "dependencies": {
+    "director": "^1.2.3",
+    "vue": "^0.11.0"
+  },
+  "devDependencies": {
+    "uglify-js": "^2.4.15",
+    "vueify": "^0.1.0",
+    "watchify": "^2.1.1"
+  }
+}
